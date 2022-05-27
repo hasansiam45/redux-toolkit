@@ -1,7 +1,11 @@
 .App {
   text-align: center;
 }
-
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,4 +39,61 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* navbar */
+.header{
+  display: flex;
+  justify-content: space-between;
+  background-color: #555;
+  padding: 10px;
+}
+
+.header ul{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header ul li{
+  padding: 0 10px;
+}
+
+.header a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* products */
+.productsWrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.productsWrapper img {
+  height: 80px;
+}
+.card {
+  background: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+.btn {
+  border: none;
+  outline: none;
+  background: #764abc;
+  padding: 5px 10px;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+/* cart-page */
+.cart-page img{
+  height: 40px;
+  width: 40px;
 }
